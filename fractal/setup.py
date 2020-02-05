@@ -17,7 +17,7 @@ setup(
     # metadata to display on PyPI
     author="William Fletcher",
     description="",
-    classifiers=["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
+    classifiers=["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"],
     keywords="fractal binary wolfram rule cellular automata",
 
     # could also include long_description, download_url, classifiers, etc.
