@@ -1,0 +1,143 @@
+@RULE R90Rotated
+
+@TABLE
+
+# Format: C,N,E,S,W,C'
+
+n_states:4
+neighborhood:vonNeumann
+symmetries:none
+
+0,0,0,0,0,0
+0,0,0,0,1,1
+0,0,0,0,2,2
+0,0,0,0,3,3
+
+0,1,0,0,0,1
+0,1,0,0,1,0
+0,1,0,0,2,3
+0,1,0,0,3,2
+
+0,2,0,0,0,2
+0,2,0,0,1,3
+0,2,0,0,2,0
+0,2,0,0,3,1
+
+0,3,0,0,0,3
+0,3,0,0,1,2
+0,3,0,0,2,1
+0,3,0,0,3,0
+
+@COLORS
+
+0 255 255 255
+1 128 128 128
+2 96 96 96
+3 0 0 0
+
+@ICONS
+
+XPM
+# width height num_colors chars_per_pixel
+"31 93 2 1"
+
+# pixel definitions
+". c #FFFFFF"
+"A c #000000"
+
+# state 1
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+# state 2
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+# state 3
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+".A.A.A.A.A.A.A.A.A.A.A.A.A.A.A."
+"A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A"
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
+"..............................."
