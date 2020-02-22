@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="fractal",
+    name="grayfractal",
     version="0.1",
     packages=find_packages(),
 
@@ -18,7 +18,7 @@ setup(
     author="William Fletcher",
     description="",
     classifiers=["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"],
-    keywords="fractal binary wolfram rule cellular automata",
+    keywords="fractal binary wolfram rule cellular automata curve space dimension order",
 
     # could also include long_description, download_url, classifiers, etc.
 )
