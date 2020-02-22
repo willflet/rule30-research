@@ -1,6 +1,7 @@
-""" Backends using different plotting libraries. """
+""" Plotting backends using different libraries. """
 
 from itertools import chain
+
 
 class MatplotlibBackend(object):
     """ Backend wrapping Matplotlib functionality. """
@@ -8,7 +9,7 @@ class MatplotlibBackend(object):
         try:
             from matplotlib import pyplot as plt
         except ModuleNotFoundError as err:
-            print('Backend not installed. Try another.')
+            print('Backend library not installed. Try another.')
             raise err
 
         try:
@@ -65,6 +66,4 @@ class PlotlyBackend(object):
             self.plot_generation(generation)
 
     def plot_generation(self, generation):
-
-        points = generation.points
-        segments = [[p1,p2] for p1, p2 in zip(points, points[1:])]
+        raise NotImplementedError
