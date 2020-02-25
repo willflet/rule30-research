@@ -115,10 +115,10 @@ html_theme_options = dict(
     link_hover_text_color = "#081214",
     link_hover_bg_color = "#ffffff",
     link_hover_trim_color = "transparent",
-    highlightcolor = "#e1e6ea",
+    highlightcolor = "#eceef3",
     quotebgcolor = "rgba(0,0,0,.075)",
     quotetrimcolor = "rgba(0,0,0,.075)",
-    codebgcolor = "#e1e6ea",
+    codebgcolor = "#eceef3",
     codetextcolor = "#081214",
     codetrimcolor = "rgba(0,0,0,.075)",
     codevarfont = 'Monaco, Consolas, "Lucida Console", monospace',
@@ -133,7 +133,7 @@ html_theme_options = dict(
     # header_icon =
 
     # styling for section headers
-    sectionbgcolor = "#e1e6ea",
+    sectionbgcolor = "#eceef3",
     sectiontrimcolor = "rgba(0,0,0,.125)",
     sectiontextcolor = "#393e46",
     # TODO: rename this to childsectionbgcolor
@@ -173,8 +173,8 @@ html_theme_options = dict(
     table_trim_color = "rgba(0,0,0,.15)",
 
     # styling for footer / html background
-    footerbgcolor = "#aab0b8",
-    footertextcolor = "#fff",
+    footerbgcolor = "#cad0d8",
+    footertextcolor = "#393e46",
 
     # styling for sidebar
     sidebarwidth = "2.5in",
@@ -183,13 +183,13 @@ html_theme_options = dict(
     sidebarbgcolor = "#fff",
     # small_sidebar_bg_color =
     sidebartextcolor = "#081214",
-    sidebarlinkcolor = "#696e7c",
+    sidebarlinkcolor = "#7b7e8e",
     sidebartrimcolor = "#rgba(0,0,0,.0)",
     sidebardetailcolor = "rgba(0,0,0,.0)",
     sidebarhighcolor = "#fff",
-    sidebar_button_bg = "#e1e6ea",
+    sidebar_button_bg = "#eceef3",
     sidebar_link_hover_text_color = "#081214",
-    sidebar_link_hover_bg_color = "#e1e6ea",
+    sidebar_link_hover_bg_color = "#eceef3",
     sidebar_link_hover_trim_color = "transparent",
 
     # globaltoc: bg color for current page's LI
