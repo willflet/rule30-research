@@ -1,4 +1,4 @@
-project = 'grayfractal'
+project = 'rule30-research'
 copyright = '2020 William Fletcher'
 author = 'Will Fletcher'
 
@@ -21,37 +21,39 @@ exclude_patterns = []
 pygments_style = 'sphinx'
 
 html_theme = 'cloud'
+html_title = 'Exploring Rule 30'
+html_short_title = 'Exploring Rule 30'
 # html_theme_path = ['../../../../../../Websites/sphinx-themes',]
 html_static_path = ['_static']
 # templates_path = ['_templates']
 html_favicon = '_static/favicon.ico'
 
 
-htmlhelp_basename = 'grayfractaldoc'
+htmlhelp_basename = 'rule30-research-doc'
 
 latex_elements = {
 }
 
 latex_documents = [
-    (master_doc, 'grayfractal.tex', 'grayfractal Documentation',
+    (master_doc, 'rule30-research.tex', 'rule30-research Documentation',
      'Will Fletcher', 'manual'),
 ]
 
 man_pages = [
-    (master_doc, 'grayfractal', 'grayfractal Documentation',
+    (master_doc, 'rule30-research', 'rule30-research Documentation',
      [author], 1)
 ]
 
 texinfo_documents = [
-    (master_doc, 'grayfractal', 'grayfractal Documentation',
-     author, 'grayfractal', 'One line description of project.',
+    (master_doc, 'rule30-research', 'rule30-research Documentation',
+     author, 'rule30-research', 'One line description of project.',
      'Miscellaneous'),
 ]
 
 
 html_theme_options = dict(
     # restyles theme so page background is same as document
-    borderless_decor = "false",
+    borderless_decor = "true",
     # adds some slight gradients to headers & menu bars
     shaded_decor = "false",
     # uses lighter header & section styling
@@ -72,8 +74,7 @@ html_theme_options = dict(
 
     externalrefs = "true",
     externalicon = "\21D7",
-    # issueicon =
-    #issueicon = "\2727"
+    # issueicon = "\2727",
     # NOTE: would like to use sphinx's language setting,
     #       but doesn't seem to be available in templates.
     # hyphenation_language =
@@ -81,14 +82,14 @@ html_theme_options = dict(
     # link targets
     # NOTE: roottarget can be name of document (eg: 'index', or "<toc>")
     #       logotarget is same, or can be "<root>" to reflect root value
-    roottarget  = "<toc>",
-    logotarget  = "<root>",
+    roottarget = "<toc>",
+    logotarget = "<root>",
 
     # document dimensions
     # max width document will expand to.
-    max_width      = "11.5in",
+    max_width = "11.5in",
     # max width of "minimal" mode (hides sidebar and other extras).
-    minimal_width  = "700px",
+    minimal_width = "700px",
     # minimum size for large_screen_text_size to be used
     large_width = "16in",
 
@@ -103,39 +104,42 @@ html_theme_options = dict(
     # optional base font size for screens bigger than <large_width>
     # large_layout_text_size =
 
+    # font css url - for loading in fonts (eg google font dir)
+    fontcssurl = "//fonts.googleapis.com/css?family = Noticia+Text|Open+Sans|Droid+Sans+Mono",
+
     # styling for document body
-    bodyfont        = '"Open Sans", sans-serif',
-    bodytrimcolor   = "rgba(0,0,0,.05)",
-    bgcolor         = "#ffffff",
-    textcolor       = "#000000",
-    linkcolor       = "#003469",
-    link_hover_text_color = "#d39110",
-    link_hover_bg_color = "#fff9e4",
-    link_hover_trim_color = "#F8D186",
-    highlightcolor  = "#fbe54e",
-    quotebgcolor      = "rgba(0,0,0,.075)",
-    quotetrimcolor   = "rgba(0,0,0,.05)",
-    codebgcolor      = "#eeffcc",
-    codetextcolor    = "#111111",
-    codetrimcolor    = "#AACC99",
-    codevarfont      = '"Droid Sans Mono", monospace',
-    codeblockfont    = '"Droid Sans Mono", monospace',
-    bodylineheight   = "1.5em",
+    bodyfont = 'Lato, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif',
+    bodytrimcolor = "rgba(0,0,0,.05)",
+    bgcolor = "#ffffff",
+    textcolor = "#222831",
+    linkcolor = "#393e46",
+    link_hover_text_color = "#0092ca",
+    link_hover_bg_color = "#fff",
+    link_hover_trim_color = "#0092ca",
+    highlightcolor = "#fbe54e",
+    quotebgcolor = "rgba(0,0,0,.075)",
+    quotetrimcolor = "rgba(0,0,0,.075)",
+    codebgcolor = "#e1e1ea",
+    codetextcolor = "#081214",
+    codetrimcolor = "rgba(0,0,0,.075)",
+    codevarfont = 'Monaco, Consolas, "Lucida Console", monospace',
+    codeblockfont = 'Monaco, Consolas, "Lucida Console", monospace',
+    bodylineheight = "1.5em",
 
     # styling for document headers
-    headfont        = '"Noticia Text", serif',
-    headtextcolor   = "#333",
-    headtrimcolor   = "#d0d0d0",
-    # headlinkcolor   =
+    headfont = '"Noto Serif", Georgia, Times, serif',
+    headtextcolor = "#222831",
+    headtrimcolor = "#e1e1ea",
+    # headlinkcolor =
     # header_icon =
 
     # styling for section headers
-    sectionbgcolor   = "#84A6C7",
+    sectionbgcolor = "mix(#fff, #7a7a88, 50%)",
     sectiontrimcolor = "rgba(0,0,0,.125)",
     sectiontextcolor = "#ffffff",
     # TODO: rename this to childsectionbgcolor
     rubricbgcolor = "#92BCDE",
-    section_radius = "5px",
+    section_radius = "3px",
 
     # admonitions
     inline_admonitions = "auto",
@@ -148,21 +152,21 @@ html_theme_options = dict(
     admonition_trim_width = "1px 0",
     admonition_title_color = "rgba(0,0,0,.05)",
     admonition_size = "88%",
-    admonition_radius = "5px",
+    admonition_radius = "3px",
 
     # objects
     # whether domain objects should get colored header
-    colored_objects="true",
-    colored_object_prefixes="nested",
-    object_default_color="#deebf5",
-    object_class_color="#eee3ce",
-    # object_exception_color =,
-    # object_function_color =,
-    object_attribute_color="#e6e6e6",
-    object_trim_color="rgba(0,0,0,0.1)",
-    object_type_color="rgba(0,0,0,0.3)",
-    object_radius="3px",
-    object_header_prefix="'<%- name %> \\2014\\0020'",
+    colored_objects = "true",
+    colored_object_prefixes = "nested",
+    object_default_color = "#e6e6e6",
+    object_class_color = "#f7ccdc",
+    # object_exception_color = ,
+    object_function_color = "#deebf5",
+    object_attribute_color = "#e4eae2",
+    object_trim_color = "rgba(0,0,0,0.1)",
+    object_type_color = "rgba(0,0,0,0.3)",
+    object_radius = "3px",
+    object_header_prefix = "'<%- name %> \\2014\\0020'",
 
     # tables
     table_header_color = "rgba(0,0,0,.15)",
@@ -170,21 +174,21 @@ html_theme_options = dict(
     table_trim_color = "rgba(0,0,0,.15)",
 
     # styling for footer / html background
-    footerbgcolor   = "#1A4162",
-    footertextcolor = "#B0B0B0",
+    footerbgcolor = "#081214",
+    footertextcolor = "#fff",
 
     # styling for sidebar
-    sidebarwidth="2.5in",
+    sidebarwidth = "2.5in",
     # sidebar width used when document is greater than max width
-    large_sidebar_width="3in",
-    sidebarbgcolor="#F2F2F2",
+    large_sidebar_width = "3in",
+    sidebarbgcolor = "mix(#fff, #7a7a88, 90%)",
     # small_sidebar_bg_color =
-    sidebartextcolor="#777777",
-    sidebarlinkcolor="#003469",
-    sidebartrimcolor="rgba(0,0,0,.15)",
-    sidebardetailcolor="#999999",
-    sidebarhighcolor="#FFF8E4",
-    sidebar_button_bg="#F2F2F2",
+    sidebartextcolor = "#222831",
+    sidebarlinkcolor = "#081214",
+    sidebartrimcolor = "rgba(0,0,0,.15)",
+    sidebardetailcolor = "mix(#fff, #393e46, 75%)",
+    sidebarhighcolor = "#fff",
+    sidebar_button_bg = "#F2F2F2",
     # sidebar_link_hover_text_color =
     # sidebar_link_hover_bg_color =
     # sidebar_link_hover_trim_color =
@@ -205,20 +209,17 @@ html_theme_options = dict(
     # override names used within sidebars
     # sidebar_master_title =
     # sidebar_root_title =
-    sidebar_quicklinks_title="Quick links",
-    sidebar_localtoc_title="Page contents",
-    sidebar_prev_title="Previous page",
-    sidebar_next_title="Next page",
+    sidebar_quicklinks_title = "Quick links",
+    sidebar_localtoc_title = "Page contents",
+    sidebar_prev_title = "Previous page",
+    sidebar_next_title = "Next page",
 
     # styling for top & bottom relbars
-    relbarbgcolor="#5682AD",
-    relbartextcolor="#ffffff",
-    relbarlinkcolor="#ffffff",
-    relbar_link_bg_color="rgba(0,0,0,.1)",
+    relbarbgcolor = "#081214",
+    relbartextcolor = "#ffffff",
+    relbarlinkcolor = "#ffffff",
+    relbar_link_bg_color = "rgba(1.0,1.0,1.0,.1)",
 
     # index page
-    index_category_color="#84ADBE",
-
-    # font css url - for loading in fonts (eg google font dir)
-    fontcssurl="//fonts.googleapis.com/css?family=Noticia+Text|Open+Sans|Droid+Sans+Mono",
+    index_category_color = "#84ADBE",
 )
