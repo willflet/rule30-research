@@ -55,7 +55,7 @@ texinfo_documents = [
 
 html_theme_options = dict(
     # restyles theme so page background is same as document
-    borderless_decor = "true",
+    borderless_decor = "false",
     # adds some slight gradients to headers & menu bars
     shaded_decor = "false",
     # uses lighter header & section styling
@@ -112,13 +112,13 @@ html_theme_options = dict(
     bgcolor = "#ffffff",
     textcolor = "#222831",
     linkcolor = "#393e46",
-    link_hover_text_color = "#0092ca",
-    link_hover_bg_color = "#fff",
-    link_hover_trim_color = "#0092ca",
-    highlightcolor = "#0092ca",
+    link_hover_text_color = "#081214",
+    link_hover_bg_color = "#ffffff",
+    link_hover_trim_color = "transparent",
+    highlightcolor = "#e1e6ea",
     quotebgcolor = "rgba(0,0,0,.075)",
     quotetrimcolor = "rgba(0,0,0,.075)",
-    codebgcolor = "#e1e1ea",
+    codebgcolor = "#e1e6ea",
     codetextcolor = "#081214",
     codetrimcolor = "rgba(0,0,0,.075)",
     codevarfont = 'Monaco, Consolas, "Lucida Console", monospace',
@@ -128,12 +128,12 @@ html_theme_options = dict(
     # styling for document headers
     headfont = '"Noto Serif", Georgia, Times, serif',
     headtextcolor = "#222831",
-    headtrimcolor = "#e1e1ea",
+    headtrimcolor = "transparent",
     # headlinkcolor =
     # header_icon =
 
     # styling for section headers
-    sectionbgcolor = "#e1e1ea",
+    sectionbgcolor = "#e1e6ea",
     sectiontrimcolor = "rgba(0,0,0,.125)",
     sectiontextcolor = "#393e46",
     # TODO: rename this to childsectionbgcolor
@@ -157,7 +157,7 @@ html_theme_options = dict(
     # whether domain objects should get colored header
     colored_objects = "true",
     colored_object_prefixes = "nested",
-    object_default_color = "#e6e6e6",
+    object_default_color = "#f0f0f0",
     object_class_color = "#f7c6dc",
     # object_exception_color = ,
     object_function_color = "#deebf5",
@@ -173,7 +173,7 @@ html_theme_options = dict(
     table_trim_color = "rgba(0,0,0,.15)",
 
     # styling for footer / html background
-    footerbgcolor = "#081214",
+    footerbgcolor = "#aab0b8",
     footertextcolor = "#fff",
 
     # styling for sidebar
@@ -187,10 +187,10 @@ html_theme_options = dict(
     sidebartrimcolor = "#rgba(0,0,0,.0)",
     sidebardetailcolor = "rgba(0,0,0,.0)",
     sidebarhighcolor = "#fff",
-    sidebar_button_bg = "#e1e1ea",
-    # sidebar_link_hover_text_color =
-    # sidebar_link_hover_bg_color =
-    # sidebar_link_hover_trim_color =
+    sidebar_button_bg = "#e1e6ea",
+    sidebar_link_hover_text_color = "#081214",
+    sidebar_link_hover_bg_color = "#e1e6ea",
+    sidebar_link_hover_trim_color = "transparent",
 
     # globaltoc: bg color for current page's LI
     # can also be set to special "section" value
@@ -217,7 +217,8 @@ html_theme_options = dict(
     relbarbgcolor = "#081214",
     relbartextcolor = "#ffffff",
     relbarlinkcolor = "#ffffff",
-    relbar_link_bg_color = "rgba(1.0,1.0,1.0,.1)",
+    relbar_link_bg_color = "transparent",
+    relbar_link_bg_hover = "#ffffff",
 
     # index page
     index_category_color = "#84ADBE",
