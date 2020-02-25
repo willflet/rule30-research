@@ -20,12 +20,14 @@ language = None
 exclude_patterns = []
 pygments_style = 'sphinx'
 
+
 html_theme = 'cloud'
 html_title = 'Exploring Rule 30'
 html_short_title = 'Exploring Rule 30'
 # html_theme_path = ['../../../../../../Websites/sphinx-themes',]
 html_static_path = ['_static']
-# templates_path = ['_templates']
+html_css_files = ['css/custom.css']
+templates_path = ['_templates']
 html_favicon = '_static/favicon.ico'
 
 
@@ -60,12 +62,9 @@ html_theme_options = dict(
     lighter_header_decor = "false",
     rightsidebar = "false",
 
-    # NOTE: this option is ignored, will remove in 1.9 release
-    collapsiblesidebar = "IGNORED",
-
     defaultcollapsed = "false",
     stickysidebar = "true",
-    highlighttoc = "true",
+    highlighttoc = "false",
     cleanup_toc = "false",
 
     # ms to spend scrolling when link to section on current page is clicked.
@@ -73,7 +72,7 @@ html_theme_options = dict(
     smooth_scroll_links = "500",
 
     externalrefs = "true",
-    externalicon = "\21D7",
+    externalicon = "&#187;",
     # issueicon = "\2727",
     # NOTE: would like to use sphinx's language setting,
     #       but doesn't seem to be available in templates.
@@ -105,7 +104,7 @@ html_theme_options = dict(
     # large_layout_text_size =
 
     # font css url - for loading in fonts (eg google font dir)
-    fontcssurl = "//fonts.googleapis.com/css?family = Noticia+Text|Open+Sans|Droid+Sans+Mono",
+    fontcssurl = "//fonts.googleapis.com/css?family=Lato|Noto+Serif",
 
     # styling for document body
     bodyfont = 'Lato, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif',
@@ -116,7 +115,7 @@ html_theme_options = dict(
     link_hover_text_color = "#0092ca",
     link_hover_bg_color = "#fff",
     link_hover_trim_color = "#0092ca",
-    highlightcolor = "#fbe54e",
+    highlightcolor = "#0092ca",
     quotebgcolor = "rgba(0,0,0,.075)",
     quotetrimcolor = "rgba(0,0,0,.075)",
     codebgcolor = "#e1e1ea",
@@ -134,9 +133,9 @@ html_theme_options = dict(
     # header_icon =
 
     # styling for section headers
-    sectionbgcolor = "mix(#fff, #7a7a88, 50%)",
+    sectionbgcolor = "#e1e1ea",
     sectiontrimcolor = "rgba(0,0,0,.125)",
-    sectiontextcolor = "#ffffff",
+    sectiontextcolor = "#393e46",
     # TODO: rename this to childsectionbgcolor
     rubricbgcolor = "#92BCDE",
     section_radius = "3px",
@@ -159,7 +158,7 @@ html_theme_options = dict(
     colored_objects = "true",
     colored_object_prefixes = "nested",
     object_default_color = "#e6e6e6",
-    object_class_color = "#f7ccdc",
+    object_class_color = "#f7c6dc",
     # object_exception_color = ,
     object_function_color = "#deebf5",
     object_attribute_color = "#e4eae2",
@@ -181,14 +180,14 @@ html_theme_options = dict(
     sidebarwidth = "2.5in",
     # sidebar width used when document is greater than max width
     large_sidebar_width = "3in",
-    sidebarbgcolor = "mix(#fff, #7a7a88, 90%)",
+    sidebarbgcolor = "#fff",
     # small_sidebar_bg_color =
-    sidebartextcolor = "#222831",
-    sidebarlinkcolor = "#081214",
-    sidebartrimcolor = "rgba(0,0,0,.15)",
-    sidebardetailcolor = "mix(#fff, #393e46, 75%)",
+    sidebartextcolor = "#081214",
+    sidebarlinkcolor = "#696e7c",
+    sidebartrimcolor = "#rgba(0,0,0,.0)",
+    sidebardetailcolor = "rgba(0,0,0,.0)",
     sidebarhighcolor = "#fff",
-    sidebar_button_bg = "#F2F2F2",
+    sidebar_button_bg = "#e1e1ea",
     # sidebar_link_hover_text_color =
     # sidebar_link_hover_bg_color =
     # sidebar_link_hover_trim_color =
@@ -198,7 +197,7 @@ html_theme_options = dict(
     toc_local_bg_color = "default",
 
     # globaltoc: text color for current page's LI
-    toc_local_text_color = "default",
+    toc_local_text_color = "#081214",
 
     # globaltoc: trim color around current page's LI (defaults to toc_hover_trim_color)
     toc_local_trim_color = "default",
