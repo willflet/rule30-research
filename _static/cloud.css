@@ -30,15 +30,9 @@
 
 
 
-    
 
 
 
-    
-
-
-
-    
 
 
 
@@ -197,8 +191,9 @@ body
     line-height: 1.5em;
 
     
-        margin: 0;
-        background: #ffffff;
+        margin: 1em 1em 0;
+        background: #aab0b8;
+        background-attachment: fixed;
     
 }
 
@@ -212,22 +207,15 @@ body
 
 
 
-
-
-
-
-
-
-    div.relbar-top, div.relbar-bottom
-    {
-        background: #081214;
-        padding: 0 1em;
-    }
-
     
     
     
     
+
+
+
+
+
 
 
 
@@ -243,8 +231,6 @@ div.related
     color: #ffffff;
     text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 
-    
-        background: none;
     
 
     
@@ -282,6 +268,13 @@ div.relbar-bottom div.related
 
 
 
+    
+    
+    
+    
+
+
+
 
 div.related a
 {
@@ -304,16 +297,16 @@ div.related a
 
 div.related li.right a
 {
-    background: rgba(1.0,1.0,1.0,.1);
+    background: transparent;
     font-weight: normal;
 }
 
 div.related a:hover,
 div.related li.right a:hover
 {
-    background: #fff;
-    color: #0092ca;
-    border-color: #0092ca;
+    background: #ffffff;
+    color: #081214;
+    border-color: transparent;
     text-decoration: none;
     text-shadow: none;
     
@@ -346,8 +339,6 @@ div.document
     max-width: 11.5in;
     background: #fff;
 
-    
-        background: #ffffff;
     
 }
 
@@ -394,14 +385,25 @@ div.body
     background-color: #ffffff;
     border-left: 1px solid rgba(0,0,0,.05);
     
+        
+            
+    
+        -moz-box-shadow: -1px 0 2px rgba(0,0,0,.05);
+        -webkit-box-shadow: -1px 0 2px rgba(0,0,0,.05);
+        -o-box-shadow: -1px 0 2px rgba(0,0,0,.05);
+        -ms-box-shadow: -1px 0 2px rgba(0,0,0,.05);
+        box-shadow: -1px 0 2px rgba(0,0,0,.05);
+    
+
+
+        
+    
 
     line-height: 1.5em;
 
     color: #222831;
     padding: 30px 20px;
 
-    
-        border-width: 0;
     
 
     
@@ -421,53 +423,15 @@ div.body
 
 
 
-    
-
 
 div.sphinxsidebar
 {
-    margin-top: 16px;
+    margin-top: 0;
     width: 3in;
 
     font-size: 90%;
     line-height: 1.25em;
 
-    
-        margin-bottom: 16px;
-        
-    
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -o-box-sizing: border-box;
-        -ms-box-sizing: border-box;
-        box-sizing: border-box;
-    
-
-
-        background: #fff;
-        border: 1px solid rgba(0,0,0,.05);
-        
-    
-        -moz-border-radius: 0.7em;
-        -webkit-border-radius: 0.7em;
-        -o-border-radius: 0.7em;
-        -ms-border-radius: 0.7em;
-        border-radius: 0.7em;
-    
-
-
-        
-    
-        -moz-box-shadow: 1px 1px 1px rgba(0,0,0,.05);
-        -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.05);
-        -o-box-shadow: 1px 1px 1px rgba(0,0,0,.05);
-        -ms-box-shadow: 1px 1px 1px rgba(0,0,0,.05);
-        box-shadow: 1px 1px 1px rgba(0,0,0,.05);
-    
-
-
-
-        
     
 }
 
@@ -541,9 +505,9 @@ div.sphinxsidebar a
 
 div.sphinxsidebar a:hover
 {
-    color: #0092ca;
-    background: #fff;
-    border-color: #0092ca;
+    color: #081214;
+    background: #ffffff;
+    border-color: transparent;
     text-decoration: none;
 }
 
@@ -642,9 +606,9 @@ div.sphinxsidebar ul a:hover,
 div.sphinxprev a:hover,
 div.sphinxnext a:hover
 {
-    background: #fff;
-    border-color: #0092ca;
-    color: #0092ca;
+    background: #e1e6ea;
+    border-color: transparent;
+    color: #081214;
     text-decoration: none;
 }
 
@@ -697,7 +661,7 @@ div.sphinx-toc li:before
 {
     position: absolute;
     left: -0.8em;
-    color: #0092ca;
+    color: #081214;
 }
 
     
@@ -732,7 +696,7 @@ div.sphinx-toc li:before
 
 div.sphinx-toc li.focus.local > a:not(:hover)
 {
-    color: #0092ca;
+    color: #081214;
 }
 
 
@@ -775,7 +739,7 @@ h1#search-documentation ~ form input
 div#searchbox input[type="submit"],
 h1#search-documentation ~ form > input[type="submit"]
 {
-    background: #e1e1ea;
+    background: #e1e6ea;
     
     
         -moz-border-radius: 0 5px 5px 0;
@@ -794,15 +758,15 @@ button.sidebar-toggle#sidebar-hide:hover,
 button.sidebar-toggle#sidebar-show:hover,
 .highlight .copybutton:hover
 {
-    background: #fff;
-    color: #0092ca;
-    border-color: #0092ca;
+    background: #e1e6ea;
+    color: #081214;
+    border-color: transparent;
 }
 
 h1#search-documentation ~ form input[type="text"]:focus,
 div.sphinxsidebar input[type="text"]:focus
 {
-    border-color: #0092ca;
+    border-color: transparent;
 }
 
 .highlight .copybutton:hover:not(:active),
@@ -901,12 +865,14 @@ button#sidebar-hide
 {
     position: absolute;
     
-        top: 16px;
-        right: 0;
+        top: 0;
+        right: -1px;
     
 
     background: transparent;
     border: 1px solid rgba(0,0,0,.05);
+    
+        border-top-width: 0;
     
 
     border-bottom-left-radius: 0.7em;
@@ -925,25 +891,18 @@ button#sidebar-show
     position: absolute;
     top: 0;
     
-        left: 10px;
+        left: 0;
     
 
-    background: #e1e1ea;
+    background: #e1e6ea;
     border: 1px solid #rgba(0,0,0,.0);
+    
+        border-top-width: 0;
     
 
     border-bottom-right-radius: 0.7em;
     
-        border-bottom-left-radius: 0.7em;
-    
 }
-
-    
-        
-    
-    
-    
-
 
     
 
@@ -957,12 +916,6 @@ div.footer
     text-align: center;
     font-size: 75%;
 
-    
-        background: #081214;
-        width: auto;
-        
-        
-        box-shadow: 0 50vh 0 50vh #081214;
     
 }
 
@@ -995,11 +948,6 @@ div.footer + script + div.footer
     margin-top: -12px;
 }
 
-
-    div.footer, div.footer a:not(:hover)
-    {
-        color: #ffffff;
-    }
 
 
 
@@ -1112,7 +1060,7 @@ h1#search-documentation
     
         
         padding: 6px 10px;
-        background-color: #e1e1ea;
+        background-color: #e1e6ea;
         border: 1px solid rgba(0,0,0,.125);
         border-width: 0 0 0 6px;
         color: #393e46;
@@ -1202,8 +1150,8 @@ div.body p.rubric,
     div.body h2.highlighted,
     .section.emphasize-children > .section > h3.highlighted
     {
-        background-color: #0092ca;
-        border-color: #0092ca;
+        background-color: #e1e6ea;
+        border-color: transparent;
         color: #222831;
     }
 
@@ -1298,9 +1246,9 @@ h1#search-documentation
 
 div.body a.headerlink:hover
 {
-    background-color: #fff;
-    border-color: #0092ca;
-    color: #0092ca;
+    background-color: #ffffff;
+    border-color: transparent;
+    color: #081214;
     text-decoration: none;
     
 }
@@ -1328,10 +1276,10 @@ a.headerlink:hover:active
 .html-toggle-button:hover:after,
 .section.emphasize-children > .section > h3.html-toggle-button:hover:after 
 {
-    background: #fff;
+    background: #ffffff;
     
 
-    border-color: #0092ca;
+    border-color: transparent;
     
     
         -moz-border-radius: 4px;
@@ -1353,7 +1301,7 @@ a.headerlink:hover:active
 
 
 
-    color: #0092ca;
+    color: #081214;
 }
 
 
@@ -1480,8 +1428,8 @@ a:visited
 
 a:hover
 {
-    color: #0092ca;
-    background: #fff;
+    color: #081214;
+    background: #ffffff;
     text-decoration: underline;
 }
 
@@ -1534,7 +1482,7 @@ dt:target,
 {
     padding: 4px;
     margin: -4px;
-    background-color: #0092ca;
+    background-color: #e1e6ea;
     
     
         -moz-border-radius: 10px;
@@ -1840,7 +1788,7 @@ td.linenos pre
 
 div.highlight pre
 {
-    background-color: #e1e1ea;
+    background-color: #e1e6ea;
 
     border: 1px solid rgba(0,0,0,.075);
     border-width: 1px 0;
@@ -2034,13 +1982,13 @@ div.viewcode-block:target
     0.8em
     0;
 
-    border-bottom: 1px dotted #e1e1ea;
-    color: #e1e1ea;
+    border-bottom: 1px dotted #e1e6ea;
+    color: #e1e6ea;
 }
 
 .desc-section-2 > .section-header
 {
-    color: #e1e1ea;
+    color: #e1e6ea;
 }
 
 .desc-section > .section-header:before
@@ -2181,7 +2129,7 @@ div.viewcode-block:target
 
 dl > dt.highlighted
 {
-    background: #0092ca;
+    background: #e1e6ea;
 }
 
 
@@ -2261,9 +2209,25 @@ table.indextable td > dl > dd > dl
 {
     
     
-        div.relbar-top, div.relbar-bottom
+        body
         {
-            padding: 0;
+            margin: 0;
+        }
+    
+
+        div.relbar-top div.related,
+        div.relbar-bottom div.related
+        {
+            
+    
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        -o-border-radius: 0;
+        -ms-border-radius: 0;
+        border-radius: 0;
+    
+
+
         }
     
 
@@ -2278,13 +2242,6 @@ table.indextable td > dl > dd > dl
     
 
             .sidebar-toggle-group { width: 2.5in; }
-        
-
-            button.sidebar-toggle#sidebar-show
-            {
-                left: 0;
-                border-bottom-left-radius: 0;
-            }
         
 
 }

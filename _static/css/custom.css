@@ -24,3 +24,7 @@ button.sidebar-toggle {
 div.section h2 {
     text-shadow: none;
 }
+
+div.related ul li a {
+    border-radius: 3px;
+}
