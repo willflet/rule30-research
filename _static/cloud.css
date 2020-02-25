@@ -72,8 +72,6 @@
 
 
 
-    
-
 
 
     
@@ -194,14 +192,13 @@ body
 {
     padding: 0;
     color: #000;
-    font-family: "Open Sans", sans-serif;
+    font-family: Lato, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
     font-size: 100%;
     line-height: 1.5em;
 
     
-        margin: 1em 1em 0;
-        background: #1A4162;
-        background-attachment: fixed;
+        margin: 0;
+        background: #ffffff;
     
 }
 
@@ -215,15 +212,22 @@ body
 
 
 
+
+
+
+
+
+
+    div.relbar-top, div.relbar-bottom
+    {
+        background: #081214;
+        padding: 0 1em;
+    }
+
     
     
     
     
-
-
-
-
-
 
 
 
@@ -233,12 +237,14 @@ div.related
 {
     margin: 0 auto;
     max-width: 11.5in;
-    background: #5682AD;
+    background: #081214;
     line-height: 1.5em;
     padding: .75em 0;
     color: #ffffff;
     text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 
+    
+        background: none;
     
 
     
@@ -276,13 +282,6 @@ div.relbar-bottom div.related
 
 
 
-    
-    
-    
-    
-
-
-
 
 div.related a
 {
@@ -305,16 +304,16 @@ div.related a
 
 div.related li.right a
 {
-    background: rgba(0,0,0,.1);
+    background: rgba(1.0,1.0,1.0,.1);
     font-weight: normal;
 }
 
 div.related a:hover,
 div.related li.right a:hover
 {
-    background: #fff9e4;
-    color: #d39110;
-    border-color: #F8D186;
+    background: #fff;
+    color: #0092ca;
+    border-color: #0092ca;
     text-decoration: none;
     text-shadow: none;
     
@@ -345,8 +344,10 @@ div.document
     position: relative;
     margin: 0 auto;
     max-width: 11.5in;
-    background: #F2F2F2;
+    background: #fff;
 
+    
+        background: #ffffff;
     
 }
 
@@ -393,25 +394,14 @@ div.body
     background-color: #ffffff;
     border-left: 1px solid rgba(0,0,0,.05);
     
-        
-            
-    
-        -moz-box-shadow: -1px 0 2px rgba(0,0,0,.05);
-        -webkit-box-shadow: -1px 0 2px rgba(0,0,0,.05);
-        -o-box-shadow: -1px 0 2px rgba(0,0,0,.05);
-        -ms-box-shadow: -1px 0 2px rgba(0,0,0,.05);
-        box-shadow: -1px 0 2px rgba(0,0,0,.05);
-    
-
-
-        
-    
 
     line-height: 1.5em;
 
-    color: #000000;
+    color: #222831;
     padding: 30px 20px;
 
+    
+        border-width: 0;
     
 
     
@@ -431,15 +421,53 @@ div.body
 
 
 
+    
+
 
 div.sphinxsidebar
 {
-    margin-top: 0;
+    margin-top: 16px;
     width: 3in;
 
     font-size: 90%;
     line-height: 1.25em;
 
+    
+        margin-bottom: 16px;
+        
+    
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    
+
+
+        background: #fff;
+        border: 1px solid rgba(0,0,0,.05);
+        
+    
+        -moz-border-radius: 0.7em;
+        -webkit-border-radius: 0.7em;
+        -o-border-radius: 0.7em;
+        -ms-border-radius: 0.7em;
+        border-radius: 0.7em;
+    
+
+
+        
+    
+        -moz-box-shadow: 1px 1px 1px rgba(0,0,0,.05);
+        -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.05);
+        -o-box-shadow: 1px 1px 1px rgba(0,0,0,.05);
+        -ms-box-shadow: 1px 1px 1px rgba(0,0,0,.05);
+        box-shadow: 1px 1px 1px rgba(0,0,0,.05);
+    
+
+
+
+        
     
 }
 
@@ -472,9 +500,9 @@ div.sphinxsidebar h4
     padding: 0;
     margin: 24px 16px 0 0;
 
-    font-family: "Noticia Text", serif;
+    font-family: "Noto Serif", Georgia, Times, serif;
     font-weight: normal;
-    color: #777777;
+    color: #081214;
 }
 
 div.sphinxsidebar h3 { font-size: 1.4em; }
@@ -483,12 +511,12 @@ div.sphinxsidebar h4 { font-size: 1.3em; }
 div.sphinxsidebar h3 a,
 div.sphinxsidebar h4 a
 {
-    color: #777777;
+    color: #081214;
 }
 
 div.sphinxsidebar p
 {
-    color: #777777;
+    color: #081214;
 }
 
 div.sphinxsidebar p.topless
@@ -501,21 +529,21 @@ div.sphinxsidebar ul
     margin: 10px;
     margin-right: 0;
     padding: 0;
-    color: #777777;
+    color: #081214;
 }
 
 div.sphinxsidebar a
 {
-    color: #003469;
+    color: #696e7c;
     border: 1px solid transparent;
     border-width: 1px 0;
 }
 
 div.sphinxsidebar a:hover
 {
-    color: #d39110;
-    background: #fff9e4;
-    border-color: #F8D186;
+    color: #0092ca;
+    background: #fff;
+    border-color: #0092ca;
     text-decoration: none;
 }
 
@@ -536,7 +564,7 @@ div.sphinxsidebar ul li a:hover
 
 div.sphinxsidebar a:active
 {
-    color: #777777;
+    color: #081214;
 }
 
 div.sphinxsidebar p.logo
@@ -614,9 +642,9 @@ div.sphinxsidebar ul a:hover,
 div.sphinxprev a:hover,
 div.sphinxnext a:hover
 {
-    background: #fff9e4;
-    border-color: #F8D186;
-    color: #d39110;
+    background: #fff;
+    border-color: #0092ca;
+    color: #0092ca;
     text-decoration: none;
 }
 
@@ -642,6 +670,10 @@ div.sphinxnext a:hover
 
 
 
+    .sphinxglobaltoc li.active a {
+        color: #081214;
+    }
+
 
 
 div.sphinxglobaltoc ul a[href="#"]
@@ -665,7 +697,7 @@ div.sphinx-toc li:before
 {
     position: absolute;
     left: -0.8em;
-    color: #d39110;
+    color: #0092ca;
 }
 
     
@@ -700,7 +732,7 @@ div.sphinx-toc li:before
 
 div.sphinx-toc li.focus.local > a:not(:hover)
 {
-    color: #d39110;
+    color: #0092ca;
 }
 
 
@@ -735,7 +767,7 @@ div#searchbox form > div {
 div.sphinxsidebar input,
 h1#search-documentation ~ form input
 {
-    border: 1px solid rgba(0,0,0,.15);
+    border: 1px solid #rgba(0,0,0,.0);
     font-family: sans-serif;
     font-size: 1em;
 }
@@ -743,7 +775,7 @@ h1#search-documentation ~ form input
 div#searchbox input[type="submit"],
 h1#search-documentation ~ form > input[type="submit"]
 {
-    background: #F2F2F2;
+    background: #e1e1ea;
     
     
         -moz-border-radius: 0 5px 5px 0;
@@ -762,15 +794,15 @@ button.sidebar-toggle#sidebar-hide:hover,
 button.sidebar-toggle#sidebar-show:hover,
 .highlight .copybutton:hover
 {
-    background: #fff9e4;
-    color: #d39110;
-    border-color: #F8D186;
+    background: #fff;
+    color: #0092ca;
+    border-color: #0092ca;
 }
 
 h1#search-documentation ~ form input[type="text"]:focus,
 div.sphinxsidebar input[type="text"]:focus
 {
-    border-color: #F8D186;
+    border-color: #0092ca;
 }
 
 .highlight .copybutton:hover:not(:active),
@@ -799,7 +831,7 @@ button.sidebar-toggle::-moz-focus-inner,
 
 div.sphinxsidebar .searchtip
 {
-    color: #999999;
+    color: rgba(0,0,0,.0);
 }
 
 #searchbox .highlight-link a[href$="hideSearchWords()"]
@@ -860,7 +892,7 @@ button.sidebar-toggle
     margin: 0;
     padding: 6px 12px;
 
-    color: #777777;
+    color: #081214;
     font-size: 1em;
     white-space: nowrap;
 }
@@ -869,14 +901,12 @@ button#sidebar-hide
 {
     position: absolute;
     
-        top: 0;
-        right: -1px;
+        top: 16px;
+        right: 0;
     
 
     background: transparent;
     border: 1px solid rgba(0,0,0,.05);
-    
-        border-top-width: 0;
     
 
     border-bottom-left-radius: 0.7em;
@@ -895,18 +925,25 @@ button#sidebar-show
     position: absolute;
     top: 0;
     
-        left: 0;
+        left: 10px;
     
 
-    background: #F2F2F2;
-    border: 1px solid rgba(0,0,0,.15);
-    
-        border-top-width: 0;
+    background: #e1e1ea;
+    border: 1px solid #rgba(0,0,0,.0);
     
 
     border-bottom-right-radius: 0.7em;
     
+        border-bottom-left-radius: 0.7em;
+    
 }
+
+    
+        
+    
+    
+    
+
 
     
 
@@ -914,12 +951,18 @@ button#sidebar-show
 
 div.footer
 {
-    color: #B0B0B0;
+    color: #fff;
     width: 100%;
     padding: 9px 0;
     text-align: center;
     font-size: 75%;
 
+    
+        background: #081214;
+        width: auto;
+        
+        
+        box-shadow: 0 50vh 0 50vh #081214;
     
 }
 
@@ -936,7 +979,7 @@ div.footer button.link
 div.footer a,
 div.footer button.link
 {
-    color: #B0B0B0;
+    color: #fff;
     text-decoration: underline;
 }
 
@@ -953,6 +996,11 @@ div.footer + script + div.footer
 }
 
 
+    div.footer, div.footer a:not(:hover)
+    {
+        color: #ffffff;
+    }
+
 
 
 
@@ -968,9 +1016,9 @@ div.body h4,
 div.body h5,
 div.body h6
 {
-    font-family: "Noticia Text", serif;
+    font-family: "Noto Serif", Georgia, Times, serif;
     font-weight: normal;
-    color: #333;
+    color: #222831;
     clear: both;
     
 }
@@ -1064,21 +1112,21 @@ h1#search-documentation
     
         
         padding: 6px 10px;
-        background-color: #84A6C7;
+        background-color: #e1e1ea;
         border: 1px solid rgba(0,0,0,.125);
         border-width: 0 0 0 6px;
-        color: #ffffff;
+        color: #393e46;
         text-shadow: 1px 1px rgba(0,0,0,.125);
 
         
     
     
     
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -o-border-radius: 5px;
-        -ms-border-radius: 5px;
-        border-radius: 5px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -o-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px;
     
 
 
@@ -1154,9 +1202,9 @@ div.body p.rubric,
     div.body h2.highlighted,
     .section.emphasize-children > .section > h3.highlighted
     {
-        background-color: #fbe54e;
-        border-color: #F8D186;
-        color: #333;
+        background-color: #0092ca;
+        border-color: #0092ca;
+        color: #222831;
     }
 
 
@@ -1229,7 +1277,7 @@ h1#search-documentation
 
 #hide-page-sections { float: right; opacity: 0.88; }a.headerlink
 {
-    color: #003469;
+    color: #393e46;
     font-size: 0.8em;
     margin: 0 0 0 1px;
     padding: 0 5px 0 4px;
@@ -1250,9 +1298,9 @@ h1#search-documentation
 
 div.body a.headerlink:hover
 {
-    background-color: #fff9e4;
-    border-color: #F8D186;
-    color: #d39110;
+    background-color: #fff;
+    border-color: #0092ca;
+    color: #0092ca;
     text-decoration: none;
     
 }
@@ -1280,10 +1328,10 @@ a.headerlink:hover:active
 .html-toggle-button:hover:after,
 .section.emphasize-children > .section > h3.html-toggle-button:hover:after 
 {
-    background: #fff9e4;
+    background: #fff;
     
 
-    border-color: #F8D186;
+    border-color: #0092ca;
     
     
         -moz-border-radius: 4px;
@@ -1305,7 +1353,7 @@ a.headerlink:hover:active
 
 
 
-    color: #d39110;
+    color: #0092ca;
 }
 
 
@@ -1381,7 +1429,7 @@ div.body dd
 div.body hr {
     margin: 0 10px;
     background: none;
-    border: 1px dashed rgba(0,0,0,.15);
+    border: 1px dashed #rgba(0,0,0,.0);
     border-width: 1px 0 0 0;
 }
 
@@ -1420,7 +1468,7 @@ li > p ~ ul.simple { margin-bottom: 1.5em; }
 
 a
 {
-    color: #003469;
+    color: #393e46;
     text-decoration: none;
 }
 
@@ -1432,8 +1480,8 @@ a:visited
 
 a:hover
 {
-    color: #d39110;
-    background: #fff9e4;
+    color: #0092ca;
+    background: #fff;
     text-decoration: underline;
 }
 
@@ -1461,13 +1509,13 @@ a.biglink
 
     a.external:before
     {
-        content: D7;
+        content: &#187;;
         padding-right: .1em;
     }
 
     a.external.issue:before
     {
-        content: D7;
+        content: &#187;;
     }
 
     a.external[href^="mailto:"]:before
@@ -1477,7 +1525,7 @@ a.biglink
 
     em.issue:before
     {
-        content: D7;
+        content: &#187;;
         padding-right: .1em;
     }
 dt:target,
@@ -1486,7 +1534,7 @@ dt:target,
 {
     padding: 4px;
     margin: -4px;
-    background-color: #fbe54e;
+    background-color: #0092ca;
     
     
         -moz-border-radius: 10px;
@@ -1535,7 +1583,7 @@ table.docutils.align-right { margin-left: auto; }
 table.docutils th {
     border: 0 solid transparent;
     padding: .4em;
-    font-family: "Noticia Text", serif;
+    font-family: "Noto Serif", Georgia, Times, serif;
     background: rgba(0,0,0,.15);
 }
 
@@ -1600,11 +1648,11 @@ div.admonition, p.deprecated
     border-width: 1px 0;
     
     
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -o-border-radius: 5px;
-        -ms-border-radius: 5px;
-        border-radius: 5px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -o-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px;
     
 
 
@@ -1785,16 +1833,16 @@ td.linenos pre
 {
     padding: 10px;
 
-    font-family: "Droid Sans Mono", monospace;
+    font-family: Monaco, Consolas, "Lucida Console", monospace;
     font-size: 85%;
     line-height: 1.5em;
 }
 
 div.highlight pre
 {
-    background-color: #eeffcc;
+    background-color: #e1e1ea;
 
-    border: 1px solid #AACC99;
+    border: 1px solid rgba(0,0,0,.075);
     border-width: 1px 0;
     border-style: solid dotted dotted solid;
     
@@ -1807,7 +1855,7 @@ div.highlight pre
     
 
 
-    color: #111111;
+    color: #081214;
 }
 
 
@@ -1847,14 +1895,14 @@ table.highlighttable div.linenodiv pre
 
 code
 {
-    font-family: "Droid Sans Mono", monospace;
+    font-family: Monaco, Consolas, "Lucida Console", monospace;
     font-size: 90%;
 }
 
 code.literal
 {
     background-color: rgba(0,0,0,.075);
-    border: 1px solid rgba(0,0,0,.05);
+    border: 1px solid rgba(0,0,0,.075);
     padding: 0px 4px;
     margin: 1px;
 
@@ -1874,7 +1922,7 @@ p code.literal { white-space: nowrap; }
 
 code.samp.literal > em
 {
-    font-family: "Droid Sans Mono", monospace;
+    font-family: Monaco, Consolas, "Lucida Console", monospace;
     padding: 0 1px;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=
     60);
@@ -1909,7 +1957,7 @@ code.literal.xref
 
 .viewcode-back
 {
-    font-family: "Open Sans", sans-serif;
+    font-family: Lato, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 }
 
 div.viewcode-block:target
@@ -1943,7 +1991,7 @@ div.viewcode-block:target
 
 
     font-size: 75%;
-    color: #777777;
+    color: #081214;
     white-space: nowrap;
     cursor: pointer;
 }
@@ -1986,13 +2034,13 @@ div.viewcode-block:target
     0.8em
     0;
 
-    border-bottom: 1px dotted #84A6C7;
-    color: #84A6C7;
+    border-bottom: 1px dotted #e1e1ea;
+    color: #e1e1ea;
 }
 
 .desc-section-2 > .section-header
 {
-    color: #84A6C7;
+    color: #e1e1ea;
 }
 
 .desc-section > .section-header:before
@@ -2061,7 +2109,7 @@ div.viewcode-block:target
     dl.attribute > dt
     {
         background-color:
-        #e6e6e6;
+        #e4eae2;
     }
 
     dl.function > dt,
@@ -2076,14 +2124,14 @@ div.viewcode-block:target
     dl.class > dt
     {
         background-color:
-        #eee3ce;
+        #f7c6dc;
         border-width: 0 0 0 6px;
     }
 
     dl.exception > dt
     {
         background-color:
-        #eee3ce;
+        #f7c6dc;
     }
 
     
@@ -2133,7 +2181,7 @@ div.viewcode-block:target
 
 dl > dt.highlighted
 {
-    background: #fbe54e;
+    background: #0092ca;
 }
 
 
@@ -2157,7 +2205,7 @@ table.indextable span.category
 table.indextable a,
 table.indextable a:hover span.category
 {
-    color: #003469;
+    color: #393e46;
 }
 
 table.indextable span.category span.location
@@ -2213,25 +2261,9 @@ table.indextable td > dl > dd > dl
 {
     
     
-        body
+        div.relbar-top, div.relbar-bottom
         {
-            margin: 0;
-        }
-    
-
-        div.relbar-top div.related,
-        div.relbar-bottom div.related
-        {
-            
-    
-        -moz-border-radius: 0;
-        -webkit-border-radius: 0;
-        -o-border-radius: 0;
-        -ms-border-radius: 0;
-        border-radius: 0;
-    
-
-
+            padding: 0;
         }
     
 
@@ -2246,6 +2278,13 @@ table.indextable td > dl > dd > dl
     
 
             .sidebar-toggle-group { width: 2.5in; }
+        
+
+            button.sidebar-toggle#sidebar-show
+            {
+                left: 0;
+                border-bottom-left-radius: 0;
+            }
         
 
 }
@@ -2294,7 +2333,7 @@ table.indextable td > dl > dd > dl
             top: 0;
             right: 0;
             background: #ffffff;
-            border-color: rgba(0,0,0,.15);
+            border-color: #rgba(0,0,0,.0);
         }
     
 
@@ -2357,7 +2396,7 @@ table.indextable td > dl > dd > dl
     div.body h5,
     div.body h6
     {
-        color: #333 !important;
+        color: #222831 !important;
         text-shadow: none !important;
         border: none !important;
         padding: 0;
