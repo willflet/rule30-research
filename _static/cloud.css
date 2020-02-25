@@ -192,7 +192,7 @@ body
 
     
         margin: 1em 1em 0;
-        background: #aab0b8;
+        background: #cad0d8;
         background-attachment: fixed;
     
 }
@@ -498,7 +498,7 @@ div.sphinxsidebar ul
 
 div.sphinxsidebar a
 {
-    color: #696e7c;
+    color: #7b7e8e;
     border: 1px solid transparent;
     border-width: 1px 0;
 }
@@ -606,7 +606,7 @@ div.sphinxsidebar ul a:hover,
 div.sphinxprev a:hover,
 div.sphinxnext a:hover
 {
-    background: #e1e6ea;
+    background: #eceef3;
     border-color: transparent;
     color: #081214;
     text-decoration: none;
@@ -739,7 +739,7 @@ h1#search-documentation ~ form input
 div#searchbox input[type="submit"],
 h1#search-documentation ~ form > input[type="submit"]
 {
-    background: #e1e6ea;
+    background: #eceef3;
     
     
         -moz-border-radius: 0 5px 5px 0;
@@ -758,7 +758,7 @@ button.sidebar-toggle#sidebar-hide:hover,
 button.sidebar-toggle#sidebar-show:hover,
 .highlight .copybutton:hover
 {
-    background: #e1e6ea;
+    background: #eceef3;
     color: #081214;
     border-color: transparent;
 }
@@ -894,7 +894,7 @@ button#sidebar-show
         left: 0;
     
 
-    background: #e1e6ea;
+    background: #eceef3;
     border: 1px solid #rgba(0,0,0,.0);
     
         border-top-width: 0;
@@ -910,7 +910,7 @@ button#sidebar-show
 
 div.footer
 {
-    color: #fff;
+    color: #393e46;
     width: 100%;
     padding: 9px 0;
     text-align: center;
@@ -932,7 +932,7 @@ div.footer button.link
 div.footer a,
 div.footer button.link
 {
-    color: #fff;
+    color: #393e46;
     text-decoration: underline;
 }
 
@@ -1060,7 +1060,7 @@ h1#search-documentation
     
         
         padding: 6px 10px;
-        background-color: #e1e6ea;
+        background-color: #eceef3;
         border: 1px solid rgba(0,0,0,.125);
         border-width: 0 0 0 6px;
         color: #393e46;
@@ -1150,7 +1150,7 @@ div.body p.rubric,
     div.body h2.highlighted,
     .section.emphasize-children > .section > h3.highlighted
     {
-        background-color: #e1e6ea;
+        background-color: #eceef3;
         border-color: transparent;
         color: #222831;
     }
@@ -1482,7 +1482,7 @@ dt:target,
 {
     padding: 4px;
     margin: -4px;
-    background-color: #e1e6ea;
+    background-color: #eceef3;
     
     
         -moz-border-radius: 10px;
@@ -1788,7 +1788,7 @@ td.linenos pre
 
 div.highlight pre
 {
-    background-color: #e1e6ea;
+    background-color: #eceef3;
 
     border: 1px solid rgba(0,0,0,.075);
     border-width: 1px 0;
@@ -1982,13 +1982,13 @@ div.viewcode-block:target
     0.8em
     0;
 
-    border-bottom: 1px dotted #e1e6ea;
-    color: #e1e6ea;
+    border-bottom: 1px dotted #eceef3;
+    color: #eceef3;
 }
 
 .desc-section-2 > .section-header
 {
-    color: #e1e6ea;
+    color: #eceef3;
 }
 
 .desc-section > .section-header:before
@@ -2129,7 +2129,7 @@ div.viewcode-block:target
 
 dl > dt.highlighted
 {
-    background: #e1e6ea;
+    background: #eceef3;
 }
 
 
