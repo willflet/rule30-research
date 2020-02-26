@@ -30,28 +30,11 @@ html_css_files = ['css/custom.css']
 templates_path = ['_templates']
 html_favicon = '_static/favicon.ico'
 
-
-htmlhelp_basename = 'rule30-research-doc'
-
-latex_elements = {
+html_sidebars = {
+    '**': ['localtoc.html', 'searchbox.html']
 }
 
-latex_documents = [
-    (master_doc, 'rule30-research.tex', 'rule30-research Documentation',
-     'Will Fletcher', 'manual'),
-]
-
-man_pages = [
-    (master_doc, 'rule30-research', 'rule30-research Documentation',
-     [author], 1)
-]
-
-texinfo_documents = [
-    (master_doc, 'rule30-research', 'rule30-research Documentation',
-     author, 'rule30-research', 'One line description of project.',
-     'Miscellaneous'),
-]
-
+htmlhelp_basename = 'rule30-research-doc'
 
 html_theme_options = dict(
     # restyles theme so page background is same as document
