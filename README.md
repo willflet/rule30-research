@@ -1,2 +1,6 @@
-[Docpages](https://willflet.github.io/rule30-research) for resources related to
-my [exploration of Rule 30](https://willflet.github.io/).
+# Exploring Rule 30 | Home
+
+## Packages
+
+### [grayfractal](https://docs.bayesiansaddles.com/rule30-research/grayfractal)
+Understanding the Gray code fractal.
